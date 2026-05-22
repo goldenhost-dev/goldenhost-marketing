@@ -35,13 +35,13 @@ function App() {
           </span>
           <div className="flex items-center gap-5">
             <a
-              href="https://golden-host-concierge.vercel.app"
+              href="https://app.goldenhost.app"
               className="text-sm text-white hover:opacity-70 transition-opacity"
             >
               Sign In
             </a>
             <a
-              href="https://golden-host-concierge.vercel.app/signup"
+              href="https://app.goldenhost.app/signup"
               style={{ border: '1px solid #d4a017', color: '#d4a017' }}
               className="text-sm font-medium px-4 py-1.5 rounded-lg hover:bg-amber-400/10 transition-colors"
             >
@@ -77,7 +77,7 @@ function App() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <a
-              href="https://golden-host-concierge.vercel.app/signup"
+              href="https://app.goldenhost.app/signup"
               style={{ backgroundColor: '#d4a017', color: '#08080f' }}
               className="px-7 py-3 rounded-lg font-semibold text-sm hover:opacity-90 transition-opacity"
             >
@@ -263,7 +263,7 @@ function App() {
               ))}
             </ul>
             <a
-              href="https://golden-host-concierge.vercel.app/signup"
+              href="https://app.goldenhost.app/signup"
               style={{ backgroundColor: '#d4a017', color: '#08080f' }}
               className="block w-full py-3 rounded-lg font-semibold text-sm hover:opacity-90 transition-opacity"
             >
