@@ -30,7 +30,7 @@ function App() {
         className="fixed top-0 left-0 right-0 z-50"
       >
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          <span style={{ color: '#f59e0b' }} className="text-lg font-bold tracking-tight">
+          <span style={{ color: '#d4a017' }} className="text-lg font-bold tracking-tight">
             GoldenHost AI
           </span>
           <div className="flex items-center gap-5">
@@ -42,7 +42,7 @@ function App() {
             </a>
             <a
               href="https://golden-host-concierge.vercel.app/signup"
-              style={{ border: '1px solid #f59e0b', color: '#f59e0b' }}
+              style={{ border: '1px solid #d4a017', color: '#d4a017' }}
               className="text-sm font-medium px-4 py-1.5 rounded-lg hover:bg-amber-400/10 transition-colors"
             >
               Start Free Trial
@@ -78,7 +78,7 @@ function App() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <a
               href="https://golden-host-concierge.vercel.app/signup"
-              style={{ backgroundColor: '#f59e0b', color: '#08080f' }}
+              style={{ backgroundColor: '#d4a017', color: '#08080f' }}
               className="px-7 py-3 rounded-lg font-semibold text-sm hover:opacity-90 transition-opacity"
             >
               Start Free Trial
@@ -105,7 +105,7 @@ function App() {
         <div className="max-w-3xl mx-auto">
           <hr className="border-t border-white/10 w-24 mx-auto mb-8" />
           <p
-            style={{ color: '#f59e0b', letterSpacing: '0.2em' }}
+            style={{ color: '#d4a017', letterSpacing: '0.2em' }}
             className="text-sm font-semibold uppercase mb-6 fade-in"
           >
             The OpenTable Tax
@@ -237,7 +237,7 @@ function App() {
             <p className="text-8xl font-black text-white leading-none mb-1">$250</p>
             <p style={{ color: '#888899' }} className="text-lg mb-5">/month CAD</p>
             <div
-              style={{ border: '1px solid #f59e0b', color: '#f59e0b' }}
+              style={{ border: '1px solid #d4a017', color: '#d4a017' }}
               className="inline-block text-xs font-medium px-3 py-1 rounded-full mb-8"
             >
               30-day free trial
@@ -255,8 +255,8 @@ function App() {
               ].map((item) => (
                 <li key={item} className="flex items-center gap-3 text-sm text-white">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <circle cx="8" cy="8" r="7" stroke="#f59e0b" strokeWidth="1.2"/>
-                    <path d="M5 8l2 2 4-4" stroke="#f59e0b" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+                    <circle cx="8" cy="8" r="7" stroke="#d4a017" strokeWidth="1.2"/>
+                    <path d="M5 8l2 2 4-4" stroke="#d4a017" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                   {item}
                 </li>
@@ -264,7 +264,7 @@ function App() {
             </ul>
             <a
               href="https://golden-host-concierge.vercel.app/signup"
-              style={{ backgroundColor: '#f59e0b', color: '#08080f' }}
+              style={{ backgroundColor: '#d4a017', color: '#08080f' }}
               className="block w-full py-3 rounded-lg font-semibold text-sm hover:opacity-90 transition-opacity"
             >
               Start Free Trial
@@ -282,7 +282,7 @@ function App() {
         className="py-10 px-6"
       >
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
-          <span style={{ color: '#f59e0b' }} className="font-bold">GoldenHost AI</span>
+          <span style={{ color: '#d4a017' }} className="font-bold">GoldenHost AI</span>
           <div style={{ color: '#888899' }} className="flex gap-6">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms</a>
