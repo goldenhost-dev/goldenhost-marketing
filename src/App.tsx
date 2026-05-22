@@ -52,7 +52,7 @@ function App() {
       </nav>
 
       {/* ── Hero ── */}
-      <section className="relative min-h-screen flex items-center justify-center text-center px-6 pt-16 overflow-hidden">
+      <section className="relative min-h-[85vh] flex items-center justify-center text-center px-6 pt-16 overflow-hidden">
         {/* ambient glow */}
         <div
           style={{
@@ -69,8 +69,8 @@ function App() {
           }}
         />
         <div className="relative max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-black text-white leading-none tracking-tighter mb-6 max-w-4xl mx-auto">
-            The reservation platform independent restaurants deserve.
+          <h1 className="text-5xl md:text-7xl font-black text-white leading-none tracking-tighter mb-6 max-w-5xl mx-auto">
+            The reservation platform restaurants deserve.
           </h1>
           <p style={{ color: '#888899' }} className="text-lg md:text-xl mb-10 max-w-xl mx-auto leading-relaxed">
             No per-cover fees. Flat $250/month. Sofia answers your phones.
