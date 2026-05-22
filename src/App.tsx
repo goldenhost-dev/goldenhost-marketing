@@ -69,7 +69,7 @@ function App() {
           }}
         />
         <div className="relative max-w-4xl mx-auto">
-          <h1 className="text-6xl md:text-8xl font-black text-white leading-none tracking-tighter mb-6">
+          <h1 className="text-5xl md:text-7xl font-black text-white leading-none tracking-tighter mb-6 max-w-4xl mx-auto">
             The reservation platform independent restaurants deserve.
           </h1>
           <p style={{ color: '#888899' }} className="text-lg md:text-xl mb-10 max-w-xl mx-auto leading-relaxed">
@@ -101,8 +101,15 @@ function App() {
       </section>
 
       {/* ── Problem ── */}
-      <section className="py-32 px-6 text-center">
+      <section className="py-24 px-6 text-center">
         <div className="max-w-3xl mx-auto">
+          <hr className="border-t border-white/10 w-24 mx-auto mb-8" />
+          <p
+            style={{ color: '#f59e0b', letterSpacing: '0.2em' }}
+            className="text-sm font-semibold uppercase mb-6 fade-in"
+          >
+            The OpenTable Tax
+          </p>
           <p className="text-8xl font-black text-white mb-6 fade-in">
             $1.50
           </p>
@@ -192,7 +199,7 @@ function App() {
                 key={f.title}
                 className={`fade-in ${f.stagger}`}
                 style={{
-                  background: 'rgba(255,255,255,0.03)',
+                  background: 'rgba(255,255,255,0.04)',
                   border: '1px solid rgba(255,255,255,0.08)',
                   borderRadius: 16,
                   padding: 32,
