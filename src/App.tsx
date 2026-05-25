@@ -849,7 +849,7 @@ function FAQ() {
     },
     {
       q: "How does the 30-day free trial work?",
-      a: "Sign up and get full access to every feature for 30 days. No credit card is required to start. If you decide to continue, your first charge is $250 on day 31. If you cancel before then, you owe nothing.",
+      a: "Sign up and get full access to every feature for 30 days. If you decide to continue, your first charge is $250 on day 31. If you cancel before then, you owe nothing.",
     },
     {
       q: "Does my restaurant's phone number change?",
@@ -971,7 +971,7 @@ function CTASection() {
           className="text-lg mb-10"
           style={{ color: "rgba(232,213,160,0.6)" }}
         >
-          Start your free 30-day trial today. No credit card, no commitment, no setup fees. Sofia will be answering your calls by tonight.
+          Start your free 30-day trial today. No setup fees. Sofia will be answering your calls by tonight.
         </p>
         <GoldButton href="https://app.goldenhost.app/auth" large>
           Get Started Free — 30 Days
@@ -981,7 +981,7 @@ function CTASection() {
           className="mt-4 text-xs"
           style={{ color: "rgba(232,213,160,0.35)" }}
         >
-          Setup in minutes · No contracts · Cancel anytime
+          Setup in minutes · Cancel anytime
         </p>
       </div>
     </section>
