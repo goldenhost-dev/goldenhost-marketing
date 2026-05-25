@@ -262,7 +262,7 @@ function Hero() {
           className="mt-5 text-xs"
           style={{ color: "rgba(232,213,160,0.4)" }}
         >
-          No credit card required · Cancel anytime · Setup in under 5 minutes
+          Cancel anytime · Setup in under 5 minutes
         </p>
       </div>
 
@@ -510,10 +510,10 @@ function HowItWorks() {
 function Comparison() {
   const rows = [
     { label: "Monthly cost", gh: "$250 flat", ot: "$449+ base + per-cover fees" },
-    { label: "Per-cover fees", gh: "None", ot: "$1.50–$9.50 per diner" },
+    { label: "Per-cover fees", gh: "None", ot: "$1.00–$1.50 per network cover" },
     { label: "AI phone agent", gh: "Included (Sofia)", ot: "Not available" },
     { label: "No-show prediction", gh: "Included", ot: "Not available" },
-    { label: "Deposit collection", gh: "Included", ot: "Add-on" },
+    { label: "Deposit collection", gh: "Included", ot: "Via third-party integration only" },
     { label: "Floor plan management", gh: "Full iPad mode", ot: "Basic" },
     { label: "Guest CRM", gh: "Full CRM with allergies", ot: "Limited" },
     { label: "SMS reminders", gh: "Included", ot: "Add-on" },
@@ -676,7 +676,7 @@ function Pricing() {
                 className="text-sm mt-1"
                 style={{ color: "rgba(232,213,160,0.5)" }}
               >
-                No per-cover fees. No setup fees. No contracts.
+                No per-cover fees. No setup fees.
               </p>
             </div>
             <div
@@ -688,7 +688,7 @@ function Pricing() {
             >
               <div className="text-xs font-medium mb-0.5" style={{ color: "rgba(212,160,23,0.7)" }}>Try free for</div>
               <div className="text-2xl font-bold" style={{ color: GOLD }}>30 days</div>
-              <div className="text-xs" style={{ color: "rgba(212,160,23,0.7)" }}>no card required</div>
+              <div className="text-xs" style={{ color: "rgba(212,160,23,0.7)" }}>then $250/month</div>
             </div>
           </div>
 
@@ -724,7 +724,7 @@ function Pricing() {
             className="text-center text-xs mt-3"
             style={{ color: "rgba(232,213,160,0.35)" }}
           >
-            No credit card required · Cancel anytime · Instant access
+            Cancel anytime · Instant access
           </p>
         </div>
 
@@ -845,7 +845,7 @@ function FAQ() {
   const faqs = [
     {
       q: "Does GoldenHost AI replace OpenTable?",
-      a: "Yes — GoldenHost AI handles everything OpenTable does (reservations, reminders, guest management) plus things OpenTable doesn't offer at all: a real AI phone agent, no-show prediction, deposit collection, and a full iPad floor management mode. And without the per-cover fees.",
+      a: "Yes — GoldenHost AI handles everything OpenTable does: reservations, reminders, and guest management. But it also includes a built-in AI phone agent (Sofia) that OpenTable doesn't offer natively, plus no-show prediction and a full iPad floor management mode — all for a flat $250/month instead of per-cover fees that add up fast on a busy night.",
     },
     {
       q: "How does the 30-day free trial work?",
@@ -865,7 +865,7 @@ function FAQ() {
     },
     {
       q: "What if I want to cancel?",
-      a: "Cancel anytime from your account settings — no phone call required, no cancellation fees, no questions asked. Your data is exported and yours to keep.",
+      a: "You can cancel anytime from your billing settings. Your subscription will remain active until the end of your current billing period, after which your account will be deactivated.",
     },
   ];
 
