@@ -285,6 +285,16 @@ export default function PrivacyPolicy() {
             </li>
           ))}
         </ul>
+        <p
+          style={{
+            fontSize: "0.9375rem",
+            lineHeight: 1.75,
+            color: TEXT_BODY,
+            margin: "0.75rem 0 0",
+          }}
+        >
+          We do not use tracking cookies or third-party analytics on this website.
+        </p>
 
         <Divider />
 
@@ -373,7 +383,7 @@ export default function PrivacyPolicy() {
             "Account data is retained for as long as your subscription is active.",
             "Guest data is retained until you delete or anonymize it via the Guest CRM.",
             "Anonymized guest records retain visit counts and spend totals only — all personal identifiers (name, phone, email) are permanently removed.",
-            "You may request full account deletion by emailing privacy@goldenhost.app. We will complete the deletion within 30 days.",
+            "You may request full account deletion by emailing admin@goldenhost.app. We will complete the deletion within 30 days.",
           ].map((item) => (
             <li
               key={item}
@@ -404,6 +414,25 @@ export default function PrivacyPolicy() {
 
         <Divider />
 
+        {/* Section 5b */}
+        <SectionHeading number="5b" title="Data Security" />
+        <p
+          style={{
+            fontSize: "0.9375rem",
+            lineHeight: 1.75,
+            color: TEXT_BODY,
+            margin: "0.75rem 0 0",
+          }}
+        >
+          We take reasonable technical and organizational measures to protect your data. All
+          data is encrypted at rest and transmitted over TLS (HTTPS). Our infrastructure is
+          hosted on Supabase and Railway, both of which maintain industry-standard security
+          practices. No method of transmission over the internet is 100% secure, and we
+          cannot guarantee absolute security.
+        </p>
+
+        <Divider />
+
         {/* Section 6 */}
         <SectionHeading number="6" title="Your Rights (PIPEDA)" />
         <div
@@ -425,10 +454,10 @@ export default function PrivacyPolicy() {
           <p style={{ margin: 0 }}>
             To exercise any of these rights, contact us at{" "}
             <a
-              href="mailto:privacy@goldenhost.app"
+              href="mailto:admin@goldenhost.app"
               style={{ color: GOLD, textDecoration: "none", fontWeight: 500 }}
             >
-              privacy@goldenhost.app
+              admin@goldenhost.app
             </a>
             . We will respond to all requests within 30 days.
           </p>
@@ -454,8 +483,8 @@ export default function PrivacyPolicy() {
             { label: "Company", value: "GoldenHost AI" },
             {
               label: "Email",
-              value: "privacy@goldenhost.app",
-              href: "mailto:privacy@goldenhost.app",
+              value: "admin@goldenhost.app",
+              href: "mailto:admin@goldenhost.app",
             },
             {
               label: "Website",
@@ -491,6 +520,24 @@ export default function PrivacyPolicy() {
             </div>
           ))}
         </div>
+
+        <Divider />
+
+        {/* Section 8 */}
+        <SectionHeading number="8" title="Changes to This Policy" />
+        <p
+          style={{
+            fontSize: "0.9375rem",
+            lineHeight: 1.75,
+            color: TEXT_BODY,
+            margin: "0.75rem 0 0",
+          }}
+        >
+          We may update this Privacy Policy from time to time. When we do, we will update
+          the effective date at the top of this page and notify active subscribers by email.
+          Your continued use of GoldenHost AI after any changes constitutes your acceptance
+          of the updated policy. We encourage you to review this page periodically.
+        </p>
       </main>
 
       {/* Footer */}
