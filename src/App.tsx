@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import {
   PhoneCall,
   Tablet,
@@ -1052,9 +1053,11 @@ function Footer() {
           </p>
           <div className="flex items-center gap-6">
             <a
-              href="#"
+              href="/privacy"
               className="text-xs transition-colors"
-              style={{ color: "rgba(232,160,23,0.25)" }}
+              style={{ color: "rgba(212,160,23,0.45)" }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = GOLD)}
+              onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(212,160,23,0.45)")}
             >
               Privacy Policy
             </a>
@@ -1073,6 +1076,10 @@ function Footer() {
 }
 
 export default function App() {
+  if (window.location.pathname === "/privacy") {
+    return <PrivacyPolicy />;
+  }
+
   return (
     <div style={{ background: BG, minHeight: "100vh", fontFamily: "Inter, sans-serif" }}>
       <Navbar />
