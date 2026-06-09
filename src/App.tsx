@@ -1,5 +1,6 @@
 import { useState } from "react";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
 import {
   PhoneCall,
   Tablet,
@@ -1064,9 +1065,11 @@ function Footer() {
               Privacy Policy
             </a>
             <a
-              href="#"
+              href="/terms"
               className="text-xs transition-colors"
-              style={{ color: "rgba(212,160,23,0.25)" }}
+              style={{ color: "rgba(212,160,23,0.45)" }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = GOLD)}
+              onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(212,160,23,0.45)")}
             >
               Terms of Service
             </a>
@@ -1080,6 +1083,9 @@ function Footer() {
 export default function App() {
   if (window.location.pathname === "/privacy") {
     return <PrivacyPolicy />;
+  }
+  if (window.location.pathname === "/terms") {
+    return <TermsOfService />;
   }
 
   return (
