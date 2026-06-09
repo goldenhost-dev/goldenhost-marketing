@@ -202,7 +202,7 @@ function Hero() {
           }}
         >
           <Star size={12} fill={GOLD} />
-          No per-cover fees · No setup costs · Just $250/month
+          No per-cover fees · No long-term contracts · $500/month flat
         </div>
 
         {/* Logo centrepiece */}
@@ -238,7 +238,7 @@ function Hero() {
           className="text-lg sm:text-xl max-w-2xl mx-auto mb-4 leading-relaxed"
           style={{ color: "rgba(232,213,160,0.7)", fontFamily: "Inter, sans-serif" }}
         >
-          Sofia, your AI phone agent, answers every call and books every reservation 24/7. GoldenHost AI handles reservations, no-shows, floor management, and guest relationships — for a flat $250/month.
+          Sofia, your AI phone agent, answers every call and books every reservation 24/7. No per-cover fees. No annual contracts. Everything OpenTable and SevenRooms charge extra for — in one flat $500/month platform built exclusively for independent GTA restaurants.
         </p>
 
         <p
@@ -263,7 +263,7 @@ function Hero() {
           className="mt-5 text-xs"
           style={{ color: "rgba(232,213,160,0.4)" }}
         >
-          Cancel anytime · Setup in under 5 minutes
+          Cancel anytime · 30-day free trial · $250 one-time setup
         </p>
       </div>
 
@@ -275,8 +275,8 @@ function Hero() {
         {[
           { value: "$0", label: "Per-cover fees" },
           { value: "24/7", label: "AI availability" },
-          { value: "30%", label: "Fewer no-shows" },
-          { value: "5 min", label: "Setup time" },
+          { value: "30 days", label: "Free trial" },
+          { value: "GTA", label: "Independent restaurants" },
         ].map((stat) => (
           <div
             key={stat.label}
@@ -510,15 +510,17 @@ function HowItWorks() {
 
 function Comparison() {
   const rows = [
-    { label: "Monthly cost", gh: "$250 flat", ot: "$449+ base + per-cover fees" },
-    { label: "Per-cover fees", gh: "None", ot: "$1.00–$1.50 per network cover" },
-    { label: "AI phone agent", gh: "Included (Sofia)", ot: "Not available" },
-    { label: "No-show prediction", gh: "Included", ot: "Not available" },
-    { label: "Deposit collection", gh: "Included", ot: "Via third-party integration only" },
-    { label: "Floor plan management", gh: "Full iPad mode", ot: "Basic" },
-    { label: "Guest CRM", gh: "Full CRM with allergies", ot: "Limited" },
-    { label: "SMS reminders", gh: "Included", ot: "Add-on" },
-    { label: "Free trial", gh: "30 days, no card", ot: "None" },
+    { label: "Monthly cost", gh: "$500/month flat", ot: "$449+ base + per-cover fees", sr: "$500–$1,000+/mo" },
+    { label: "Setup fee", gh: "$250 one-time", ot: "$0", sr: "$500–$1,000+" },
+    { label: "Contract required", gh: "Month-to-month", ot: "Annual", sr: "Annual" },
+    { label: "Per-cover fees", gh: "None", ot: "$1.00–$1.50 per network cover", sr: "None" },
+    { label: "AI phone agent", gh: "Included (Sofia)", ot: "Not available", sr: "Not available" },
+    { label: "No-show prediction", gh: "Included", ot: "Not available", sr: "Basic" },
+    { label: "Deposit collection", gh: "Included", ot: "Via third-party integration only", sr: "Included" },
+    { label: "Floor plan management", gh: "Full iPad mode", ot: "Basic", sr: "Advanced" },
+    { label: "Guest CRM", gh: "Full CRM with allergies", ot: "Limited", sr: "Advanced" },
+    { label: "SMS reminders", gh: "Included", ot: "Add-on", sr: "Included" },
+    { label: "Free trial", gh: "30 days, no card", ot: "None", sr: "None" },
   ];
 
   return (
@@ -535,13 +537,13 @@ function Comparison() {
             className="text-3xl sm:text-4xl font-bold mb-4"
             style={{ color: "#f5e9c8", fontFamily: "Inter, sans-serif" }}
           >
-            GoldenHost AI vs. OpenTable
+            GoldenHost AI vs. OpenTable vs. SevenRooms
           </h2>
           <p
-            className="text-lg max-w-xl mx-auto"
+            className="text-lg max-w-2xl mx-auto"
             style={{ color: "rgba(232,213,160,0.6)" }}
           >
-            OpenTable charges per diner. A busy Saturday night can cost you $200+ in fees alone. Stop paying for every seat you fill.
+            OpenTable charges per diner. SevenRooms locks you into annual contracts. GoldenHost AI is $500/month flat — no per-cover fees, no annual commitment, cancel anytime.
           </p>
         </div>
 
@@ -550,7 +552,7 @@ function Comparison() {
           style={{ border: `1px solid ${BORDER}` }}
         >
           <div
-            className="grid grid-cols-3 text-sm font-semibold py-3 px-6"
+            className="grid grid-cols-4 text-sm font-semibold py-3 px-4 sm:px-6 gap-2"
             style={{
               background: "rgba(212,160,23,0.08)",
               borderBottom: `1px solid ${BORDER}`,
@@ -559,12 +561,13 @@ function Comparison() {
             <span style={{ color: "rgba(232,213,160,0.5)" }}>Feature</span>
             <span style={{ color: GOLD }}>GoldenHost AI</span>
             <span style={{ color: "rgba(232,213,160,0.4)" }}>OpenTable</span>
+            <span style={{ color: "rgba(232,213,160,0.4)" }}>SevenRooms</span>
           </div>
 
           {rows.map((row, i) => (
             <div
               key={row.label}
-              className="grid grid-cols-3 items-center py-4 px-6 text-sm"
+              className="grid grid-cols-4 items-center py-4 px-4 sm:px-6 text-sm gap-2"
               style={{
                 background: i % 2 === 0 ? BG_CARD : BG_CARD2,
                 borderBottom: i < rows.length - 1 ? `1px solid ${BORDER}` : undefined,
@@ -572,10 +575,11 @@ function Comparison() {
             >
               <span style={{ color: "rgba(232,213,160,0.6)" }}>{row.label}</span>
               <span className="flex items-center gap-2 font-medium" style={{ color: "#c8f5c4" }}>
-                <Check size={14} style={{ color: "#4ade80" }} />
+                <Check size={14} style={{ color: "#4ade80", flexShrink: 0 }} />
                 {row.gh}
               </span>
               <span style={{ color: "rgba(232,213,160,0.4)" }}>{row.ot}</span>
+              <span style={{ color: "rgba(232,213,160,0.4)" }}>{row.sr}</span>
             </div>
           ))}
         </div>
@@ -584,7 +588,7 @@ function Comparison() {
           className="text-center text-xs mt-6"
           style={{ color: "rgba(232,213,160,0.3)" }}
         >
-          OpenTable pricing as of May 2026. Actual costs vary by plan and reservation volume.
+          OpenTable and SevenRooms pricing as of May 2026. Actual costs vary by plan and reservation volume.
         </p>
       </div>
     </section>
@@ -665,7 +669,7 @@ function Pricing() {
                 className="flex items-end gap-2"
                 style={{ color: "#f5e9c8", fontFamily: "Inter, sans-serif" }}
               >
-                <span className="text-6xl font-bold">$250</span>
+                <span className="text-6xl font-bold">$500</span>
                 <span
                   className="text-xl mb-2"
                   style={{ color: "rgba(232,213,160,0.5)" }}
@@ -677,7 +681,7 @@ function Pricing() {
                 className="text-sm mt-1"
                 style={{ color: "rgba(232,213,160,0.5)" }}
               >
-                No per-cover fees. No setup fees.
+                No per-cover fees. No annual contract. $250 one-time setup.
               </p>
             </div>
             <div
@@ -689,7 +693,7 @@ function Pricing() {
             >
               <div className="text-xs font-medium mb-0.5" style={{ color: "rgba(212,160,23,0.7)" }}>Try free for</div>
               <div className="text-2xl font-bold" style={{ color: GOLD }}>30 days</div>
-              <div className="text-xs" style={{ color: "rgba(212,160,23,0.7)" }}>then $250/month</div>
+              <div className="text-xs" style={{ color: "rgba(212,160,23,0.7)" }}>then $500/month</div>
             </div>
           </div>
 
@@ -742,13 +746,13 @@ function Pricing() {
               className="text-sm font-semibold mb-1"
               style={{ color: "#f5e9c8" }}
             >
-              Our promise: if GoldenHost AI doesn't reduce your no-show rate in 30 days, you pay nothing.
+              Our promise: if GoldenHost AI doesn't reduce your no-shows in 30 days, we'll refund your setup fee. No questions asked.
             </p>
             <p
               className="text-xs"
               style={{ color: "rgba(232,213,160,0.5)" }}
             >
-              We're confident enough in the product to back it with a full money-back guarantee.
+              We're confident enough in the product to back it with a full refund guarantee.
             </p>
           </div>
         </div>
@@ -846,11 +850,15 @@ function FAQ() {
   const faqs = [
     {
       q: "Does GoldenHost AI replace OpenTable?",
-      a: "Yes — GoldenHost AI handles everything OpenTable does: reservations, reminders, and guest management. But it also includes a built-in AI phone agent (Sofia) that OpenTable doesn't offer natively, plus no-show prediction and a full iPad floor management mode — all for a flat $250/month instead of per-cover fees that add up fast on a busy night.",
+      a: "Yes — GoldenHost AI handles everything OpenTable does: reservations, reminders, and guest management. But it also includes a built-in AI phone agent (Sofia) that OpenTable doesn't offer natively, plus no-show prediction and a full iPad floor management mode — all for a flat $500/month instead of per-cover fees that add up fast on a busy night.",
     },
     {
       q: "How does the 30-day free trial work?",
-      a: "Sign up and get full access to every feature for 30 days. If you decide to continue, your first charge is $250 on day 31. If you cancel before then, you owe nothing.",
+      a: "Sign up and get full access to every feature for 30 days. If you decide to continue, your first charge is $500 on day 31. If you cancel before then, you owe nothing.",
+    },
+    {
+      q: "Is there a setup fee?",
+      a: "Yes — there's a one-time $250 setup fee that covers onboarding, configuration, and getting Sofia live on your phone line. After setup, you pay $500/month with no long-term contract.",
     },
     {
       q: "Does my restaurant's phone number change?",
@@ -972,7 +980,7 @@ function CTASection() {
           className="text-lg mb-10"
           style={{ color: "rgba(232,213,160,0.6)" }}
         >
-          Start your free 30-day trial today. No setup fees. Sofia will be answering your calls by tonight.
+          Start your free 30-day trial today. Setup in one afternoon. Sofia will be answering your calls by tonight.
         </p>
         <GoldButton href="https://app.goldenhost.app/auth" large>
           Get Started Free — 30 Days
