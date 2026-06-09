@@ -743,16 +743,10 @@ function Pricing() {
           <Shield size={20} style={{ color: GOLD, flexShrink: 0, marginTop: 2 }} />
           <div>
             <p
-              className="text-sm font-semibold mb-1"
+              className="text-sm font-semibold"
               style={{ color: "#f5e9c8" }}
             >
-              Our promise: if GoldenHost AI doesn't reduce your no-shows in 30 days, we'll refund your setup fee. No questions asked.
-            </p>
-            <p
-              className="text-xs"
-              style={{ color: "rgba(232,213,160,0.5)" }}
-            >
-              We're confident enough in the product to back it with a full refund guarantee.
+              Our promise: GoldenHost AI is built exclusively for independent mid-to-high-end restaurants in the GTA. If it's not the right fit, cancel anytime — no penalties, no questions asked.
             </p>
           </div>
         </div>
