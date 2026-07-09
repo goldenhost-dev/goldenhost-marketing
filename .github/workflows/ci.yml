@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    name: Build + audit
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # The production build (tsc -b && vite build) is the gate Vercel runs —
+      # mirror it here so a build/type break is caught on push/PR, not on deploy.
+      - name: Build
+        run: npm run build
+
+      # Report known-vulnerable dependencies. Non-blocking (`|| true`) so an
+      # unfixable upstream advisory doesn't gate merges — it surfaces, not blocks.
+      - name: Dependency audit (non-blocking)
+        run: npm audit --audit-level=high || true
